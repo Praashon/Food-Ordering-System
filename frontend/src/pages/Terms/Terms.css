@@ -1,0 +1,1070 @@
+/* Terms of Service Page Styles */
+.terms-page {
+  min-height: 100vh;
+  background: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.terms-hero {
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
+  padding: 100px 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.last-updated {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 0.9rem;
+  backdrop-filter: blur(10px);
+}
+
+.hero-icon {
+  text-align: center;
+}
+
+.contract-icon {
+  font-size: 8rem;
+  opacity: 0.8;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Terms Overview */
+.terms-overview {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.terms-overview h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.terms-overview h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.overview-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.overview-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: #8e44ad;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.overview-card h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.overview-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Service Description */
+.service-description {
+  padding: 100px 0;
+  background: white;
+}
+
+.service-description h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.service-description h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.service-main h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.service-main p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.service-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #8e44ad;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  background: #f0e6ff;
+  transform: translateX(5px);
+}
+
+.feature-item h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* User Responsibilities */
+.user-responsibilities {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.user-responsibilities h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.user-responsibilities h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.responsibilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.responsibility-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.responsibility-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: #8e44ad;
+}
+
+.responsibility-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.responsibility-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #8e44ad;
+}
+
+.responsibility-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.responsibility-card li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.responsibility-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8e44ad;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Our Responsibilities */
+.our-responsibilities {
+  padding: 100px 0;
+  background: white;
+}
+
+.our-responsibilities h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.our-responsibilities h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.resp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.resp-item {
+  background: #f8f9fa;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.resp-item:hover {
+  background: white;
+  border-color: #8e44ad;
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.resp-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.resp-item h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.resp-item p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Orders and Payments */
+.orders-payments {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.orders-payments h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.orders-payments h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.orders-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.order-section,
+.payment-section,
+.cancellation-section {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.order-section:hover,
+.payment-section:hover,
+.cancellation-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.order-section h3,
+.payment-section h3,
+.cancellation-section h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #8e44ad;
+}
+
+.order-section ul,
+.payment-section ul,
+.cancellation-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.order-section li,
+.payment-section li,
+.cancellation-section li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.order-section li::before,
+.payment-section li::before,
+.cancellation-section li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8e44ad;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Delivery Terms */
+.delivery-terms {
+  padding: 100px 0;
+  background: white;
+}
+
+.delivery-terms h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.delivery-terms h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.delivery-policies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+}
+
+.policy-card {
+  background: #f8f9fa;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.policy-card:hover {
+  background: white;
+  border-color: #8e44ad;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.policy-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #8e44ad;
+}
+
+.policy-points p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.policy-points strong {
+  color: #2c3e50;
+}
+
+/* Prohibited Activities */
+.prohibited-activities {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.prohibited-activities h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.prohibited-activities h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.prohibited-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.prohibited-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.prohibited-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: #e74c3c;
+}
+
+.prohibited-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.prohibited-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+}
+
+.prohibited-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.prohibited-card li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.prohibited-card li::before {
+  content: '✗';
+  position: absolute;
+  left: 0;
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Limitation of Liability */
+.liability-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.liability-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.liability-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.liability-main h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.liability-main p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.limitation-items {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.limitation-item {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 15px;
+  border-left: 4px solid #f39c12;
+  transition: all 0.3s ease;
+}
+
+.limitation-item:hover {
+  background: #fff3cd;
+  transform: translateX(5px);
+}
+
+.limitation-item strong {
+  color: #2c3e50;
+}
+
+.liability-notice {
+  background: #fff5f5;
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid #e74c3c;
+}
+
+.liability-notice h4 {
+  color: #c0392b;
+  margin-bottom: 15px;
+}
+
+.liability-notice p {
+  color: #721c24;
+  font-weight: 500;
+}
+
+/* Account Termination */
+.termination-section {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.termination-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.termination-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.termination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.termination-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.termination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  border-color: #8e44ad;
+}
+
+.termination-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #8e44ad;
+}
+
+.termination-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.termination-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.termination-card li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.termination-card li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8e44ad;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Changes Section */
+.changes-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.changes-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.changes-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #8e44ad, #9b59b6);
+  border-radius: 2px;
+}
+
+.changes-main h3 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.changes-main p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.changes-process {
+  display: grid;
+  gap: 30px;
+}
+
+.change-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 25px;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.change-step:hover {
+  background: #f0e6ff;
+  transform: translateX(5px);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.step-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.terms-contact {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-section h2,
+.governing-law h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.contact-section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.contact-method:hover {
+  border-color: #8e44ad;
+  transform: translateX(5px);
+}
+
+.method-icon {
+  font-size: 1.5rem;
+}
+
+.contact-method a {
+  color: #8e44ad;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-method a:hover {
+  color: #9b59b6;
+}
+
+.law-content h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.law-content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.law-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.law-content li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-left: 25px;
+  line-height: 1.6;
+}
+
+.law-content li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #8e44ad;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.terms-version {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  border-left: 4px solid #8e44ad;
+}
+
+/* CTA Section */
+.terms-cta {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-button {
+  background: white;
+  color: #8e44ad;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .delivery-policies {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .responsibilities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .resp-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .orders-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .prohibited-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .termination-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-hero {
+    padding: 60px 0;
+  }
+  
+  .terms-overview,
+  .service-description,
+  .user-responsibilities,
+  .our-responsibilities,
+  .orders-payments,
+  .delivery-terms,
+  .prohibited-activities,
+  .liability-section,
+  .termination-section,
+  .changes-section,
+  .terms-contact {
+    padding: 60px 0;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+  
+  .overview-card,
+  .responsibility-card,
+  .resp-item,
+  .order-section,
+  .payment-section,
+  .cancellation-section,
+  .policy-card,
+  .prohibited-card,
+  .termination-card {
+    padding: 25px 20px;
+  }
+}

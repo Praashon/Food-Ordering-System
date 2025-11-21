@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import './animation-fix.css';
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
+
+/* Clearfix utility */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Prevent any unintended floating */
+* {
+  float: none !important;
+}
+
+/* Comprehensive protection for food item components */
+.food-display .food-item,
+.food-display .food-item *,
+.food-display .food-item::before,
+.food-display .food-item::after,
+.popular-items-section .food-item,
+.popular-items-section .food-item *,
+.popular-items-section .food-item::before,
+.popular-items-section .food-item::after {
+  animation: none !important;
+  animation-duration: 0s !important;
+  animation-iteration-count: 0 !important;
+}
+
+/* Allow only specific hover animations for food items */
+.food-display .food-item:hover {
+  animation: none !important;
+  transform: translateY(-5px) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.food-display .food-item:hover .food-item-image {
+  animation: none !important;
+  transform: scale(1.05) !important;
+  transition: transform 0.3s ease !important;
+}
+
+body{
+  min-height: 100vh;
+  padding-top: 80px; /* Add padding to compensate for fixed navbar */
+}
+
+.app{
+  width: 80%;
+  margin: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+  
+}
+

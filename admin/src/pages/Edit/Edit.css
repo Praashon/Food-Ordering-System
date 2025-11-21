@@ -1,0 +1,71 @@
+.edit {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 21px;
+  }
+  
+  .edit form {
+    gap: 20px;
+  }
+  
+  .edit-image-upload img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-image-upload img:hover {
+    border-color: #ff6b6b;
+    transform: scale(1.02);
+  }
+  
+  .edit-image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  
+  .edit-image-upload p {
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .edit-product-name,
+  .edit-product-description {
+    width: max(35%, 200px);
+    font-size: 20px;
+  }
+  
+  .edit-product-name input,
+  .edit-product-description textarea {
+    padding: 10px;
+    font-size: 17px;
+  
+  }
+  
+  .edit-category-price{
+      display: flex;
+      gap: 30px;
+  }
+  
+  .edit-category-price select, .edit-category-price input{
+      max-width: 120px;
+      padding: 10px;
+      font-size: 16px;
+  }
+  
+  .edit-btn{
+      max-width: 120px;
+      border: none;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+  }

@@ -1,0 +1,129 @@
+.food-display{
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.food-display-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 40px;
+    margin-bottom: 50px;
+    padding: 20px 0;
+}
+
+/* Loading State */
+.food-display-loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: #666;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #ff6347;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.food-display-loading p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ff6347;
+}
+
+/* No Results State */
+.food-display-no-results {
+    text-align: center;
+    padding: 80px 20px;
+    color: #666;
+}
+
+.no-results-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.food-display-no-results h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.food-display-no-results p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.food-display-no-results .suggestion {
+    color: #ff6347;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        row-gap: 30px;
+    }
+    
+    .food-display {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .food-display-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Ensure no floating elements */
+.food-display-list::before,
+.food-display-list::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .food-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .food-display-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        row-gap: 25px;
+    }
+}

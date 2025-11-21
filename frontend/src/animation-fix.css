@@ -1,0 +1,69 @@
+/* Universal Animation Fix for Food Ordering Project */
+
+/* Disable all infinite animations globally */
+*[style*="animation: float"],
+*[style*="animation: rotate"],
+*[style*="animation: orbit"],
+*[style*="animation: bounce"],
+*[style*="animation: pulse"] {
+  animation: none !important;
+}
+
+/* Disable specific problematic animations */
+.menu-hero::before,
+.about-hero::before,
+.contact-hero::before,
+.delivery-hero::before,
+.home-hero::before,
+.stats-section::before,
+.features-section::before {
+  animation: none !important;
+}
+
+/* Disable all infinite keyframe animations */
+@keyframes float {
+  0%, 100% { transform: none !important; }
+}
+
+@keyframes rotate {
+  0%, 100% { transform: none !important; }
+}
+
+@keyframes orbit {
+  0%, 100% { transform: none !important; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: none !important; }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: none !important; }
+}
+
+/* Completely protect food items from any animations */
+.food-item,
+.food-item *,
+.food-display .food-item,
+.food-display .food-item *,
+.popular-items-section .food-item,
+.popular-items-section .food-item * {
+  animation: none !important;
+  animation-duration: 0s !important;
+  animation-iteration-count: 0 !important;
+  animation-play-state: paused !important;
+  animation-fill-mode: none !important;
+}
+
+/* Allow only controlled hover effects */
+.food-item:hover {
+  animation: none !important;
+  transform: translateY(-5px) !important;
+  transition: transform 0.3s ease !important;
+}
+
+.food-item:hover .food-item-image {
+  animation: none !important;
+  transform: scale(1.05) !important;
+  transition: transform 0.3s ease !important;
+}
